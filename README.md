@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # KKR Linens & Fabrics — Website (React + Vite)
 
 ## Run it
@@ -58,3 +60,5 @@ kkr-linens-website/
 Run `npm run build` and upload the `dist` folder to any static host (Netlify, Vercel,
 Hostinger, cPanel). For deep links like `/about` to work on refresh, configure the host to
 serve `index.html` for all routes (Netlify: add a `_redirects` file with `/* /index.html 200`).
+
+# KKR_Projects
