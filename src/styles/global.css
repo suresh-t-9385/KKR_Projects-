@@ -200,18 +200,6 @@ code { background: #eef2f7; padding: 1px 6px; border-radius: 4px; font-size: 0.8
 .modal-close { position: absolute; top: 10px; right: 14px; background: none; border: 0; font-size: 2rem; cursor: pointer; color: var(--navy); line-height: 1; }
 .lightbox .modal-close { color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
 
-/* ---------- Footer ---------- */
-.footer { background: var(--navy-dark); color: #cfd8e6; margin-top: 0; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 48px; padding-top: 60px; padding-bottom: 48px; }
-.footer h4 { color: #fff; margin-bottom: 16px; }
-.footer-about { margin: 16px 0; font-size: 0.93rem; }
-.footer-links li { margin: 8px 0; }
-.footer-links a:hover, .footer-contact a:hover { color: var(--yellow); }
-.footer-contact li { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0; }
-.footer-contact svg { margin-top: 4px; flex-shrink: 0; color: var(--yellow); }
-.social-footer { padding: 0; color: #fff; gap: 18px; }
-.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); padding: 18px 0; font-size: 0.88rem; text-align: center; }
-
 /* ---------- Chat widget ---------- */
 .chat-widget { position: fixed; right: 20px; bottom: 20px; z-index: 90; display: flex; align-items: flex-end; gap: 12px; flex-direction: column; }
 .chat-bubble { background: #fff; padding: 18px 20px; border-radius: 10px; box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18); font-size: 1.05rem; position: relative; animation: pop 0.4s ease; }
@@ -239,7 +227,7 @@ code { background: #eef2f7; padding: 1px 6px; border-radius: 4px; font-size: 0.8
   .topbar-sales strong { margin-left: 0; }
   .social { padding-left: 16px; gap: 20px; }
   .grid-3, .gallery { grid-template-columns: repeat(2, 1fr); }
-  .about-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .about-visual { height: 280px; }
   .hero { min-height: 520px; }
 }

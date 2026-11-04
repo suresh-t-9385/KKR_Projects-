@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pay-online
+
+Sitemap: https://www.kkrlinens.com/sitemap.xml

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Table cloth and napkins">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8efe3"/><stop offset="1" stop-color="#ecd3ae"/></linearGradient>
+<linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e6ebf2"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0b2a55" flood-opacity=".22"/></filter>
+</defs>
+<rect width="800" height="600" fill="url(#bg)"/>
+<ellipse cx="400" cy="520" rx="300" ry="26" fill="#0b2a55" opacity=".12"/>
+
+<g filter="url(#soft)">
+<path d="M110 230 H690 L640 330 H160Z" fill="#fff"/>
+<path d="M160 330 H640 V470 L610 440 L575 480 L535 440 L500 480 L465 440 L430 480 L395 440 L360 480 L325 440 L290 480 L255 440 L220 480 L190 440 L160 470Z" fill="#f6ead6"/>
+</g>
+<g stroke="#ecd3ae" stroke-width="3"><path d="M230 230 L205 330M400 230V330M570 230 L595 330"/></g>
+<g filter="url(#soft)"><rect x="330" y="255" width="140" height="60" rx="6" fill="#003366" transform="rotate(-4 400 285)"/></g>
+<line x1="345" y1="290" x2="455" y2="282" stroke="#ffc107" stroke-width="4"/>
+</svg>
