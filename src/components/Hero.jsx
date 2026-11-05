@@ -3,14 +3,16 @@ import { company } from "../data/siteData.js";
 import QuoteModal from "./QuoteModal.jsx";
 
 // Replace public/videos/hero.mp4 with your real product video (H.264, no audio, under ~6 MB).
-const VIDEO_MP4 = "/videos/hero.mp4";
+const VIDEO_MP4 = "/videos/kkrprodution.mp4";
 const POSTER = "/videos/hero-poster.jpg";
 
 function canPlayVideo() {
   if (typeof window === "undefined") return false;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+    return false;
   const conn = navigator.connection;
-  if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return false;
+  if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || "")))
+    return false;
   return true;
 }
 
@@ -39,7 +41,8 @@ export default function Hero() {
       else v.pause();
     });
     io.observe(v);
-    const onVis = () => (document.hidden ? v.pause() : v.play().catch(() => {}));
+    const onVis = () =>
+      document.hidden ? v.pause() : v.play().catch(() => {});
     document.addEventListener("visibilitychange", onVis);
     return () => {
       io.disconnect();
@@ -92,13 +95,23 @@ export default function Hero() {
       </div>
       <div className="hero-overlay" aria-hidden="true" />
       <div className="hero-content">
-        <h1 className="hero-title hero-in" style={{ "--d": "0.1s" }}>{company.heroTitle}</h1>
-        <p className="hero-sub hero-in" style={{ "--d": "0.3s" }}>{company.heroSubtitle}</p>
-        <button className="btn btn-yellow hero-in" style={{ "--d": "0.55s" }} onClick={() => setOpen(true)}>
+        <h1 className="hero-title hero-in" style={{ "--d": "0.1s" }}>
+          {company.heroTitle}
+        </h1>
+        <p className="hero-sub hero-in" style={{ "--d": "0.3s" }}>
+          {company.heroSubtitle}
+        </p>
+        <button
+          className="btn btn-yellow hero-in"
+          style={{ "--d": "0.55s" }}
+          onClick={() => setOpen(true)}
+        >
           GET A QUOTE
         </button>
       </div>
-      <a href="#why" className="scroll-cue" aria-label="Scroll to content"><span /></a>
+      <a href="#why" className="scroll-cue" aria-label="Scroll to content">
+        <span />
+      </a>
       <QuoteModal open={open} onClose={() => setOpen(false)} />
     </section>
   );
