@@ -3,7 +3,7 @@ import { company } from "../data/siteData.js";
 import QuoteModal from "./QuoteModal.jsx";
 
 // Replace public/videos/hero.mp4 with your real product video (H.264, no audio, under ~6 MB).
-const VIDEO_MP4 = "/videos/kkrprodution.mp4";
+const VIDEO_MP4 = "/videos/kkrProduct.webm";
 const POSTER = "/videos/hero-poster.jpg";
 
 function canPlayVideo() {
@@ -89,7 +89,7 @@ export default function Hero() {
             onCanPlay={() => setReady(true)}
             onError={() => setReady(false)}
           >
-            <source src={VIDEO_MP4} type="video/mp4" />
+            <source src={VIDEO_MP4} type="video/webm" />
           </video>
         )}
       </div>
