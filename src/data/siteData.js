@@ -77,15 +77,17 @@ export const locations = [
 
 export const whatsappNumber = "919884311288"; // country code + number, no "+"
 
+const img2 = (n) => `/images/products/${n}.webp`;
+const img1 = (n) => `/images/products/${n}.jpg`;
 const img = (n) => `/images/products/${n}.svg`;
 
 // Items shown in the "Our Products" hover dropdown (image + link to a filtered product list)
 export const productMenu = [
-  { label: "Bed Sheets", image: img("bedsheet"), to: "/products?q=sheet" },
-  { label: "Mattress", image: img("mattress"), to: "/products?q=mattress" },
-  { label: "Pillows", image: img("pillow"), to: "/products?q=pillow" },
+  { label: "Bed Sheets", image: img2("bedsheet"), to: "/products?q=sheet" },
+  { label: "Mattress", image: img2("mattress"), to: "/products?q=mattress" },
+  { label: "Pillows", image: img2("pillow"), to: "/products?q=pillow" },
   { label: "Duvets", image: img("duvet"), to: "/products?q=duvet" },
-  { label: "Towels", image: img("towel"), to: "/products?q=towel" },
+  { label: "Towels", image: img1("towel"), to: "/products?q=towel" },
   { label: "Bath Robes", image: img("robe"), to: "/products?q=robe" },
   {
     label: "Table Linen",
@@ -119,7 +121,7 @@ export const categories = [
 export const products = [
   {
     id: 1,
-    image: img("bedsheet"),
+    image: img2("bedsheet"),
     name: "Cotton Bed Sheets",
     category: "Bed Linen",
     desc: "Premium 200-300 thread count percale and satin bed sheets for hotels and resorts.",
@@ -135,7 +137,7 @@ export const products = [
   },
   {
     id: 3,
-    image: img("pillow"),
+    image: img2("pillow"),
     name: "Pillow Covers & Cases",
     category: "Bed Linen",
     desc: "Envelope-style and flange pillow covers made to match your bed sheets.",
@@ -143,7 +145,7 @@ export const products = [
   },
   {
     id: 4,
-    image: img("towel"),
+    image: img1("towel"),
     name: "Bath Towels",
     category: "Bath Linen",
     desc: "Highly absorbent 100% cotton terry towels in 400-600 GSM.",
